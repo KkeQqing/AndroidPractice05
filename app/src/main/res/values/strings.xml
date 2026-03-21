@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">AndroidPractice05</string>
+    <string name="app_name">设置屏幕</string>
     <string name="bt_name">获取内容</string>
     <string name="bt_screen">设置屏幕</string>
+    <string name="carousel_app_name">图片轮播</string>
 </resources>

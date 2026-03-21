@@ -24,6 +24,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // 在 MainActivity 的 onCreate 中添加
+        android.util.Log.d("DEBUG_TAG", "✅ 成功进入 MainActivity！");
+        android.widget.Toast.makeText(this, "✅ 我是主页 MainActivity", android.widget.Toast.LENGTH_LONG).show();
+
         EdgeToEdge.enable( this);
         setContentView(R.layout.activity_main);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {

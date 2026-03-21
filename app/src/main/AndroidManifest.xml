@@ -11,16 +11,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidPractice05">
+
+        <!-- 1. 主入口：MainActivity -->
+        <!-- 注意：这里不要动，保持原样 -->
         <activity
             android:name=".MainActivity"
             android:configChanges="orientation|screenSize|keyboard"
-            android:exported="true">
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+        <!-- 2. 第二入口：CarouselActivity -->
+        <!-- 关键点：必须单独定义，且 label 必须不同 -->
+        <activity
+            android:name=".CarouselActivity"
+            android:exported="true"
+            android:label="@string/carousel_app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AndroidPractice05">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
 </manifest>

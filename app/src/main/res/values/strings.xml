@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AndroidPractice05</string>
+    <string name="bt_name">获取内容</string>
+    <string name="bt_screen">设置屏幕</string>
 </resources>
